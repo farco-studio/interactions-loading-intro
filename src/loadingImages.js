@@ -1,4 +1,4 @@
-import { gsap } from "gsap";
+import { gsap, Back } from "gsap";
 
 const images = document.querySelectorAll(".image");
 const curtain = document.querySelector(".loading-images");
@@ -15,7 +15,7 @@ const hideCurtain = () => {
       bottom: 100 + "vh",
       ease: cubicBezier,
     },
-    4
+    3.5
   );
 
   gsap.to(
@@ -23,7 +23,7 @@ const hideCurtain = () => {
     {
       duration: 0.5,
     },
-    4
+    3
   );
 };
 
@@ -36,7 +36,7 @@ const imageAnimation = () => {
       ease: cubicBezier,
       stagger: 0.8,
     },
-    1.2
+    0.7
   );
   gsap.to(
     images,
@@ -46,28 +46,11 @@ const imageAnimation = () => {
       ease: cubicBezier,
       stagger: 0.8,
     },
-    1
-  );
-};
-
-const imageCoverSize = () => {
-  tl.to(imageCover, {
-    duration: 0.5,
-    width: 40 + "vh",
-    ease: cubicBezier,
-  });
-  tl.to(
-    imageCover,
-    {
-      duration: 0.5,
-      height: 50 + "vh",
-    },
-    0.8
+    0.5
   );
 };
 
 const loadingImagesComponent = () => {
-  imageCoverSize();
   imageAnimation();
   hideCurtain();
 };
