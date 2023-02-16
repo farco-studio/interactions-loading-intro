@@ -129,6 +129,7 @@ img {
   font-family: var(--font-base);
   font-size: var(--font-size);
   font-weight: 600;
+  opacity: 0;
 }
 
 @media screen and (max-width: 1024px) {
