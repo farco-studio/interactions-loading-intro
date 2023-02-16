@@ -7,13 +7,12 @@ const changeHeaderColor = () => {
     gsap.to(svgLinks, {
         duration: 0.5,
         stroke: "#fff",
-        ease: "power2.out",
-    }, 4.6);
+    }, 4.3);
 
     headerLinks.forEach((link) => {
         setTimeout(() => {
             link.style.setProperty('--color-primary', "#fff")
-        }, 4800);
+        }, 4300);
     });
 }
 
