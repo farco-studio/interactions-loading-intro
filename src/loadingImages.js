@@ -1,4 +1,4 @@
-import { gsap, Back } from "gsap";
+import { gsap } from "gsap";
 
 const images = document.querySelectorAll(".image");
 const curtain = document.querySelector(".loading-images");
