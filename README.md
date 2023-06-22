@@ -4,7 +4,7 @@
 
 Free, refined interactions to inspire our community and make the web a more beautiful place.
 
-[Demo](https://farco-loading-intro.onrender.com/)
+[Demo](https://interactions-preload.onrender.com/)
 
 
 ## Installation
